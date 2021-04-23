@@ -57,3 +57,17 @@ const app = (() => {
       }
     });
   });
+
+  // TIMELINE
+    $("document").ready(function () {
+      $(".section-1-bloc").on("click", function (e) {
+        if (!$(this).hasClass("section-1-bloc-active")) {
+          // Si la div à la class
+          $(".section-1-bloc").removeClass("section-1-bloc-active"); // On enlève la classe des autres div
+          $(this).addClass("section-1-bloc-active"); // On active la class de la div en question
+          e.stopPropagation();
+        } else {
+          $(".section-1-bloc").removeClass("section-1-bloc-active"); // La class de toutes les div
+        }
+      });
+    });

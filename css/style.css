@@ -111,14 +111,22 @@ header #filter-container {
 /* HEADER FIN */
 
 /* MENU DEBUT */
-
-.menu-icon {
+.menu-icon{
+  position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    background: #191919;
+    border-radius: 0 0 50% 0;
+    width: 60px;
+    height: 60px;
+}
+.menu-icon-container {
+  position: absolute;
   height: 30px;
   width: 30px;
-  position: fixed;
-  z-index: 3;
-  left: 50px;
-  top: 30px;
+  left: 15px;
+  top: 20px;
   cursor: pointer;
 }
 .menu-icon__line {
@@ -283,7 +291,8 @@ body.nav-active .nav__list-item:nth-child(4) {
   box-sizing: border-box;
   padding: 0 15px;
 }
-.section-1-bloc:hover {
+/* .section-1-bloc-acti:hover, */
+.section-1-bloc-active {
   height: 650px;
   transition-duration: 500ms;
 }
@@ -342,11 +351,13 @@ body.nav-active .nav__list-item:nth-child(4) {
 .section-1-down img {
   width: 40px;
   transition-duration: 500ms;
-  transform: rotate(180deg);
-}
-.section-1-bloc:hover .section-1-down img {
   transform: rotate(-180deg);
-  transform: translateY(550px);
+  cursor: pointer;
+}
+/* .section-1-bloc:hover .section-1-down img, */
+.section-1-bloc-active .section-1-down img {
+  transform: rotate(180deg);
+  transform: translateY(300px);
   transition-duration: 500ms;
 }
 /* BAS DEBUT */
@@ -361,6 +372,8 @@ body.nav-active .nav__list-item:nth-child(4) {
 .bas-texte {
   width: 75%;
   max-width: 1000px;
+  display: flex;
+    align-items: center;
 }
 .bas-texte p {
   margin-block-start: 0em;
@@ -396,35 +409,35 @@ body.nav-active .nav__list-item:nth-child(4) {
 }
 .cont_modal {
   position: relative;
-  width: 440px;
-  height: 440px;
-  text-align: center;
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-  transition-delay: 0.2s;
-  -webkit-transition-delay: 0.2s;
-  -o-transition-delay: 0.2s;
-  transition-delay: 0.2s;
-  margin: 100px auto;
+    width: 440px;
+    height: 440px;
+    text-align: center;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    transition-delay: 0.2s;
+    -webkit-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+    margin: 100px auto;
 }
 
 .cont_photo {
   position: relative;
-  width: 75%;
-  height: 440px;
-  overflow: hidden;
-  background-color: #ffffff;
-  border-radius: 5px;
-  float: left;
-  z-index: 2;
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-  transition-delay: 0.2s;
-  -webkit-transition-delay: 0.2s;
-  -o-transition-delay: 0.2s;
-  transition-delay: 0.2s;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #ffffff;
+    border-radius: 5px;
+    float: left;
+    z-index: 2;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    transition-delay: 0.2s;
+    -webkit-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    transition-delay: 0.2s;
 }
 .cont_modal_active > .cont_photo {
   width: 40%;
@@ -476,22 +489,22 @@ body.nav-active .nav__list-item:nth-child(4) {
 }
 .cont_text_ingredients {
   position: absolute;
-  width: 0px;
-  top: 20px;
-  left: 73%;
-  margin-left: 10px;
-  height: 400px;
-  float: left;
-  z-index: 2;
-  background: #212121;
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-  transition-delay: 0.2s;
-  -webkit-transition-delay: 0.2s;
-  -o-transition-delay: 0.2s;
-  transition-delay: 0.2s;
-  border-radius: 0 0 5px 5px;
+    width: 0px;
+    top: 20px;
+    left: 98%;
+    margin-left: 10px;
+    height: 400px;
+    float: left;
+    z-index: 2;
+    background: #212121;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    transition-delay: 0.2s;
+    -webkit-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+    border-radius: 0 0 5px 5px;
 }
 
 .cont_detalles {
@@ -541,8 +554,8 @@ body.nav-active .nav__list-item:nth-child(4) {
 
 .cont_btn_open_dets {
   position: absolute;
-  right: -15px;
-  top: 50%;
+    right: -15px;
+    top: calc(50% - 15px);
 }
 .cont_btn_open_dets > a {
   display: block;
