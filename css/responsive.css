@@ -1,0 +1,238 @@
+@media screen and (max-width: 1800px) {
+}
+@media screen and (max-width: 1700px) {
+  .projet-container {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1600px) {
+}
+@media screen and (max-width: 1500px) {
+  #header-titre h1 {
+    font-size: 125px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .section-1-bloc:hover {
+    height: 900px;
+    transition-duration: 500ms;
+  }
+  .haut .section-1-img {
+    display: none;
+  }
+  .milieu {
+    display: block;
+  }
+  .section-1-titre {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1300px) {
+}
+@media screen and (max-width: 1200px) {
+  #header-titre h1 {
+    font-size: 100px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  h2 {
+    font-size: 75px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .timeline-date {
+    right: calc(150px - 125px);
+    width: 150px;
+    align-items: unset;
+  }
+  #timeline-container {
+    right: 100px;
+  }
+  .timeline-title {
+    margin-top: 20px;
+    height: fit-content;
+  }
+  .section-1-bloc:hover #timeline-container {
+    display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  #header-titre h1 {
+    font-size: 75px;
+  }
+}
+@media screen and (max-width: 800px) {
+  h2 {
+    font-size: 50px;
+  }
+}
+/* MOBILE */
+@media screen and (max-width: 767px) {
+  .section-1-titre h3 {
+    font-size: 40px;
+  }
+  .bas-texte p {
+    font-size: 16px;
+  }
+  .bas {
+    align-items: unset;
+}
+.milieu {
+    margin: 35px;
+}
+#section-1-last-bloc {
+  height: 200px;
+
+}
+  /* SECTION REALISATIONS */
+  #section-2 {
+    margin-bottom: 150px;
+  }
+  .projet-container {
+    height: 900px;
+  }
+  .cont_modal {
+    position: relative;
+    width: 100%;
+    height: 440px;
+    text-align: center;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+  }
+  .cont_modal_active {
+    width: 100%;
+  }
+  .cont_photo {
+    position: relative;
+    width: 75%;
+    height: 440px;
+    overflow: hidden;
+    background-color: #ffffff;
+    float: left;
+    z-index: 2;
+  }
+  .cont_modal_active > .cont_photo {
+    width: 75%;
+    z-index: 4000;
+  }
+  .cont_text_ingredients {
+    width: 0;
+    top: 40px;
+    left: unset;
+    margin-left: 0px;
+    z-index: 2;
+  }
+  .cont_modal_active > .cont_text_ingredients {
+    width: 60%;
+    left: unset;
+    top: 100%;
+    z-index: 1;
+  }
+  .cont_btn_open_dets {
+    position: absolute;
+    right: calc(50% - 15px);
+    top: 96%;
+    transform: rotate(90deg);
+  }
+  .cont_text_det_preparation {
+    width: 100%;
+    height: 100%;
+}
+  .cont_info_preparation {
+    margin-left: 15px;
+    width: 90%;
+    padding: 0;
+  }
+  
+
+}
+@media screen and (max-width: 700px) {
+  #header-titre h1 {
+    font-size: 50px;
+  }
+  .timeline-title {
+    border: solid 1px #27ae60;
+    padding: 0 10px;
+    font-size: 12px;
+  }
+  .timeline-date {
+    right: calc(150px - 130px);
+    width: 150px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  #timeline-container {
+    right: 10px;
+  }
+  .bas-icones {
+    position: absolute;
+    width: 32px;
+    right: 25px;
+    bottom: -75px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .bas-texte {
+    width: 95%;
+  }
+  .section-1-img img {
+    max-height: 150px;
+    max-width: 250px;
+}
+}
+@media screen and (max-width: 600px) {
+  h2 {
+    font-size: 35px;
+  }
+  .section-1-titre h3 {
+    font-size: 32px;
+  }
+  .section-1-bloc {
+    height: 300px;
+  }
+  .cont_info_preparation p{
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 500px) {
+  h2 {
+    font-size: 28px;
+    letter-spacing: 5px;
+  }
+  #header-logo {
+    width: 150px;
+  }
+  #header-titre {
+    position: relative;
+    width: 95%;
+  }
+  .cont_modal_active > .cont_photo,
+  .cont_photo {
+    width: 100%;
+}
+.cont_modal_active > .cont_text_ingredients {
+  width: 85%;
+}
+footer h3 {
+  font-size: 16px;
+}
+@media screen and (max-width: 450px) {
+  .section-1-titre h3 {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 400px) {
+  h2 {
+    font-size: 25px;
+  }
+  .section-1-titre h3 {
+    font-size: 24px;
+  }
+  #header-titre h1 {
+    font-size: 45px;
+  }
+  #header-logo {
+    right: 25px;
+}
+}
