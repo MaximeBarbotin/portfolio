@@ -471,12 +471,11 @@ body.nav-active .nav__list-item:nth-child(4) {
   background-size: cover;
 }
 .projet-container:nth-child(3) .cont_img_back {
-  background: url(../images/icon-projet-native-sante.png) center center
-    no-repeat;
+  background: url(../images/icon-projet-ezeefit.svg) center center no-repeat;
   background-size: cover;
 }
 .projet-container:nth-child(4) .cont_img_back {
-  background: url(../images/icon-projet-a-venir.svg) center center no-repeat;
+  background: url(../images/icon-projet-native-sante.png) center center no-repeat;
   background-size: cover;
 }
 .projet-container:nth-child(5) .cont_img_back {
@@ -667,6 +666,9 @@ body.nav-active .nav__list-item:nth-child(4) {
 .techno-picto img {
   height: 40px;
   padding: 10px;
+}
+.techno-picto span{
+  text-transform: uppercase;
 }
 /* SECTION 2 FIN */
 /* FOOTER DEBUT */
