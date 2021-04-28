@@ -67,6 +67,9 @@
     #contact-section {
         width: 80%;
     }
+    .h1-secondaire {
+        font-size: 50px;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -107,15 +110,12 @@
         width: 25px;
         height: 25px;
     }
-    .bas-icones img {
-        width: 25px;
+    .bas-icones i {
+        font-size: 25px;
     }
     /* SECTION REALISATIONS */
     #section-2 {
         margin-bottom: 150px;
-    }
-    .projet-container {
-        height: 900px;
     }
     .cont_modal {
         position: relative;
@@ -152,8 +152,16 @@
     .cont_modal_active>.cont_text_ingredients {
         width: 80%;
         left: unset;
-        top: 100%;
+        top: 440px;
         z-index: 1;
+    }
+    .cont_over_hidden {
+        opacity: 0;
+        transition-duration: 500ms;
+    }
+    .cont_modal_active .cont_over_hidden {
+        transition-duration: 500ms;
+        opacity: 1;
     }
     .cont_btn_open_dets {
         position: absolute;
@@ -185,6 +193,9 @@
     .contact-element i {
         padding: 10px;
         font-size: 22px;
+    }
+    .projet-container>.cont_modal_active {
+        height: 900px;
     }
     /* ABOUT PAGE */
     #err404 {
@@ -236,9 +247,6 @@
     .section-1-bloc-active {
         height: 800px;
     }
-    .cont_info_preparation p {
-        font-size: 11px;
-    }
     /* CONTACT PAGE */
     .contact-element {
         padding: 15px 10px;
@@ -249,6 +257,12 @@
     }
     #contact-section {
         width: 90%;
+    }
+    .h1-secondaire {
+        font-size: 32px;
+    }
+    .bas-texte p {
+        padding: 0px;
     }
 }
 
@@ -268,6 +282,7 @@
     }
     .cont_modal_active>.cont_text_ingredients {
         width: 90%;
+        top: 300px;
     }
     footer h3 {
         font-size: 16px;

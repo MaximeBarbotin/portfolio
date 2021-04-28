@@ -319,7 +319,7 @@ body.nav-active .nav__list-item:nth-child(4) {
 #timeline-container {
     position: absolute;
     right: 150px;
-    height: 86%;
+    height: 90%;
     border-right: dashed 2px #27ae60;
     z-index: 10;
 }
@@ -474,8 +474,9 @@ body.nav-active .nav__list-item:nth-child(4) {
     border-radius: 10px;
 }
 
-.bas-icones img {
-    width: 32px;
+.bas-icones i {
+    font-size: 32px;
+    color: #27ae60;
 }
 
 #section-1-last-bloc {
@@ -599,7 +600,6 @@ body.nav-active .nav__list-item:nth-child(4) {
     height: 400px;
     float: left;
     z-index: 2;
-    background: #212121;
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
@@ -743,6 +743,7 @@ body.nav-active .nav__list-item:nth-child(4) {
     width: 100%;
     height: 400px;
     overflow: hidden;
+    background: #212121;
 }
 
 .cont_text_det_preparation {
@@ -847,8 +848,36 @@ footer h3 {
 
 /* PAGE ABOUT DEBUT */
 
+#about-page {
+    position: relative;
+}
+
 #err404 {
     font-size: 250px;
+}
+
+.h1-secondaire {
+    font-size: 75px;
+}
+
+#titre-secondaire {
+    height: 50%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#titre-secondaire img {
+    width: 35%;
+}
+
+#about-main {
+    position: relative;
+    top: -100px;
+    z-index: 1;
+    padding: 10px;
 }
 
 
