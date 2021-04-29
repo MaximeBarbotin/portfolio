@@ -163,26 +163,15 @@
         z-index: 1;
     }
     .cont_over_hidden {
-        animation: fade-out 500ms;
+        opacity: 0;
+        transition-duration: 500ms;
+    }
+    .cont_modal_active {
+        transition-duration: 500ms;
     }
     .cont_modal_active .cont_over_hidden {
-        animation: fade-in 500ms;
-    }
-    @keyframes fade-in {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-    @keyframes fade-out {
-        0% {
-            opacity: 1;
-        }
-        100% {
-            opacity: 0;
-        }
+        opacity: 1;
+        transition-duration: 500ms;
     }
     .cont_btn_open_dets {
         position: absolute;
