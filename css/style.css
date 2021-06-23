@@ -562,31 +562,36 @@ body.nav-active .nav__list-item:nth-child(4) {
 }
 
 .projet-container:nth-child(1) .cont_img_back {
-    background: url(../images/icon-projet-portfolio.svg) center center no-repeat;
+    background: url(../images/icon-projet-amazon.png) center center no-repeat;
     background-size: cover;
 }
 
 .projet-container:nth-child(2) .cont_img_back {
-    background: url(../images/icon-projet-ludifabrik.png) center center no-repeat;
+    background: url(../images/icon-projet-portfolio.svg) center center no-repeat;
     background-size: cover;
 }
 
 .projet-container:nth-child(3) .cont_img_back {
-    background: url(../images/icon-projet-ezeefit.svg) center center no-repeat;
+    background: url(../images/icon-projet-ludifabrik.png) center center no-repeat;
     background-size: cover;
 }
 
 .projet-container:nth-child(4) .cont_img_back {
-    background: url(../images/icon-projet-native-sante.png) center center no-repeat;
+    background: url(../images/icon-projet-ezeefit.svg) center center no-repeat;
     background-size: cover;
 }
 
 .projet-container:nth-child(5) .cont_img_back {
-    background: url(../images/icon-projet-a-venir.svg) center center no-repeat;
+    background: url(../images/icon-projet-native-sante.png) center center no-repeat;
     background-size: cover;
 }
 
 .projet-container:nth-child(6) .cont_img_back {
+    background: url(../images/icon-projet-a-venir.svg) center center no-repeat;
+    background-size: cover;
+}
+
+.projet-container:nth-child(7) .cont_img_back {
     background: url(../images/icon-projet-a-venir.svg) center center no-repeat;
     background-size: cover;
 }
@@ -790,6 +795,10 @@ body.nav-active .nav__list-item:nth-child(4) {
 
 .techno-picto span {
     text-transform: uppercase;
+}
+
+.cont_btn_mas_dets i {
+    font-size: 22px;
 }
 
 
